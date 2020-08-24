@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Contact</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ionic-padding">
+  <p>
+    ชื่อ {{Name}}<br>
+    นามสกุล {{Surname}} 
+  </p>
+
+  <ion-button color="light" expand="full" shape="round"routerLink="/about" routeDirection="back">
+  Go to Back</ion-button>
+  <ion-button color="light" expand="full" shape="round"routerLink="/home" routeDirection="back">
+    Go to home
+  </ion-button>
+
+</ion-content>

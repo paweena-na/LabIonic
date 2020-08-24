@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ionic-padding">
+  <p>
+    HomePage
+  </p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/R9bW1PNAzS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <ion-button expand="full" shape="round" (click)="goToContact()">
+    <ion-icon slot="start" name="start"></ion-icon>
+
+    Open Contact Page
+  </ion-button>
+  <ion-button expand="full" shape="round" (click)="goBack()">
+    <ion-icon slot="start" name="start"></ion-icon>
+    Open to Name Page 
+  </ion-button>
+
+</ion-content>
