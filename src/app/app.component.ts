@@ -1,8 +1,12 @@
+import { from } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 
 import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
+
+import { HttpClientModule} from '@angular/common/http';
+
 
 @Component({
   selector: 'app-root',
@@ -44,7 +48,12 @@ export class AppComponent implements OnInit {
      },
      {
       title: 'Course',
-      url: '/login',
+      url: '/course',
+      icon: 'star'
+    },
+    {
+      title: 'News',
+      url: '/news',
       icon: 'star'
     }
   ];
