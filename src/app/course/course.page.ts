@@ -15,11 +15,11 @@ export class CoursePage implements OnInit, OnDestroy {
   sub: Subscription;
 
 
-  constructor(private CourseService: CourseService) { }
+  constructor(private courseService: CourseService) { }
 
   ngOnInit() {
 
-    this.sub = this.CourseService.getCourse().subscribe((courses) => {
+    this.sub = this.courseService.getCourse().subscribe((courses) => {
       this.courses = courses;
     }
     );

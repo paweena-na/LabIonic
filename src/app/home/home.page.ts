@@ -11,6 +11,11 @@ export class HomePage implements OnInit {
 
 
   constructor(private navCtrl:NavController) { }
+  
+  openSignp(){
+    this.navCtrl.navigateForward('/signup');
+  
+  }
 
   ngOnInit() {
   }
