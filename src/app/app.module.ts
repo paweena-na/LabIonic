@@ -11,6 +11,18 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { HttpClientModule } from '@angular/common/http';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabase } from '@angular/fire/database';
+
+export const config = {
+  apiKey: "AIzaSyAcfSrfey-gBR4uXAF2ppVcyLMS__WuqW4",
+    authDomain: "ionicebook-b41ee.firebaseapp.com",
+    databaseURL: "https://ionicebook-b41ee.firebaseio.com",
+    projectId: "ionicebook-b41ee",
+    storageBucket: "ionicebook-b41ee.appspot.com",
+    messagingSenderId: "1001377701096",
+
+};
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,11 +31,13 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(config),
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    AngularFireDatabase,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

@@ -11,10 +11,7 @@ import { FeedBack } from '../models/feedback';
 export class SignupPage implements OnInit {
   feedback: FeedBack;
   constructor(private loadingCtrl: LoadingController,
-    private alertCtrl: AlertController, private authService:
-
-
-AuthService, private navCtrl: NavController) { }
+    private alertCtrl: AlertController, private authService: AuthService, private navCtrl: NavController) { }
 
   ngOnInit() { }
   async signup(form: any) {

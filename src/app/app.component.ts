@@ -55,6 +55,16 @@ export class AppComponent implements OnInit {
       title: 'News',
       url: '/news',
       icon: 'star'
+    },
+    {
+      title: 'Note',
+      url: '/note',
+      icon: 'book'
+    },
+    {
+      title: 'SmartHome',
+      url: '/smarthome',
+      icon: 'key'
     }
   ];
   //public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
